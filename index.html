@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel Experiment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Travel Experiment</h1>
+        <div class="controls">
+            <label for="time">Time (T):</label>
+            <input type="range" id="time" min="0" max="10" step="0.1" value="5">
+            <label for="energy">Energy (E):</label>
+            <input type="range" id="energy" min="0" max="10" step="0.1" value="5">
+            <label for="frequency">Sound Frequency (f):</label>
+            <input type="range" id="frequency" min="0" max="10" step="0.1" value="5">
+            <button id="runExperiment">Run Experiment</button>
+        </div>
+        <div id="visualization"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
