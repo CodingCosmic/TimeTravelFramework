@@ -1,0 +1,14 @@
+{
+  "name": "TimeTravelFramework",
+  "version": "1.0.0",
+  "description": "A 3D visualization framework for time manipulation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "CodingCosmic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
