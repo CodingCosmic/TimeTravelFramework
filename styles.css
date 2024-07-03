@@ -1,29 +1,37 @@
+/* Center the body content and apply a black background */
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #222;
-    color: #fff;
-}
-
-.container {
-    text-align: center;
-}
-
-.controls {
-    margin-bottom: 20px;
-}
-
-label {
-    margin-right: 10px;
-}
-
-#visualization {
-    width: 800px;
-    height: 600px;
-    margin: 0 auto;
     background-color: #000;
+    color: #fff;
+    overflow: hidden; /* Prevents scrolling for full-screen visualization */
+}
+
+/* Styling for the controls container */
+.controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Styling for the input range sliders */
+input[type=range] {
+    width: 200px;
+    margin: 10px 0;
+}
+
+/* Container for the visualization canvas */
+#visualization {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
